@@ -19,7 +19,7 @@
                 </div>
                 <form id="imageUploadForm" enctype="multipart/form-data">
                     <button type="submit">Upload</button>
-                    <h2 id="resultMessage" style="text-align:center; margin-top: 10px"></h2>
+                    <h2 id="resultMessage"></h2>
                 </form>
             </div>
         </div>
@@ -32,9 +32,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function () {
-            debugger;
             $("#imageUploadForm").submit(function (e) {
                 e.preventDefault();
+                $("#resultMessage").empty();
                 var formData = new FormData();
                 formData.append("image", $("#mediaFile")[0].files[0]);
 
@@ -57,7 +57,6 @@
     <Script>
 
         $(function () {
-
             $('#profile').addClass('dragging').removeClass('dragging');
         });
 
@@ -84,7 +83,9 @@
             }
         })
         $('#profile').on('click', function (e) {
-            console.log('clicked')
+            console.log('clicked');
+            $("#resultMessage").empty();
+
             $('#mediaFile').click();
         });
         window.addEventListener("dragover", function (e) {
@@ -96,7 +97,6 @@
             e.preventDefault();
         }, false);
         $('#mediaFile').change(function (e) {
-            debugger
 
             var input = e.target;
             if (input.files && input.files[0]) {
