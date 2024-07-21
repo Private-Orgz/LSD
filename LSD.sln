@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSD", "LSD\LSD.csproj", "{93EC5CE0-75D9-448D-B2BF-42B08B57DF59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93EC5CE0-75D9-448D-B2BF-42B08B57DF59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93EC5CE0-75D9-448D-B2BF-42B08B57DF59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93EC5CE0-75D9-448D-B2BF-42B08B57DF59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93EC5CE0-75D9-448D-B2BF-42B08B57DF59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4CF08F0-FF67-452A-A3B7-BECCF11390AF}
+	EndGlobalSection
+EndGlobal
