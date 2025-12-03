@@ -1,0 +1,15 @@
+
+on:
+  pull_request:
+    branches:
+      - main   # ✅ enforce approval for PRs into main
+ 
+
+jobs:
+  approval-check:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    environment: master-protection   # 👈 requires environment approval
+    steps:
+      - name: Enforce Approval
+        run: echo "✅ Approval enforced via environment reviewers"
